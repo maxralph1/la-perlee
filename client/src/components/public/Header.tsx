@@ -12,14 +12,16 @@ export default function Header() {
     i18n.changeLanguage(lang);
   };
   
-  function searchProduct(e) {
+  async function searchProduct(e) {
     e.preventDefault();
-    console.log("Yes");
+    // console.log("Yes");
     const inputValue = e.target.elements['search-text'].value;
 
     if (inputValue?.length) {
-      console.log("Input found:", inputValue);
-      e.target.reset();
+      // console.log("Input found:", inputValue);
+      // Process keyword search
+      // await ...
+      await e.target.reset();
     }
   }
   
@@ -27,7 +29,7 @@ export default function Header() {
     <div className="relative flex justify-between pt-5 pb-1 mx-3 md:mx-6 lg:mx-8 border-b-2 border-b-amber-600 dark:border-b-amber-500">
       <section className="flex gap-x-3">
         <h1 className="font-bold text-amber-600 dark:text-amber-500">La Perlée</h1>
-        <div className={`${navOpen ? 'max-md:opacity-100 max-md:translate-y-0 pointer-events-auto' : 'max-md:opacity-0 max-md:-translate-y-20 pointer-events-none transition-all duration-700 ease-in-out'} absolute top-16 right-1 md:relative md:top-0 md:right-0`}>
+        <div className={`transition-all duration-700 ease-in-out ${navOpen ? 'max-md:opacity-100 max-md:translate-y-0 pointer-events-auto' : 'max-md:opacity-0 max-md:-translate-y-20 pointer-events-none'} absolute top-16 right-1 md:relative md:top-0 md:right-0`}>
           <ul className="flex flex-col md:flex-row gap-3 max-md:p-3 max-md:border-2 max-md:rounded-sm text-end md:text-start text-amber-600 dark:text-amber-500">
             <li className="font-semibold"><a href="#">Shop</a></li>
             <li className="font-semibold"><a href="#">About Us</a></li>
@@ -64,7 +66,7 @@ export default function Header() {
         <ul className="flex gap-2 text-amber-600 dark:text-amber-500">
           <li>
             <form onSubmit={searchProduct} className="flex items-center">
-              <input id="search-text" name="search-text" type="text" className={`${searchInputOpen ? 'w-24' : 'w-0'} transition-all duration-700 ease-in-out border-b-2 focus:outline-none`} />
+              <input id="search-text" name="search-text" type="text" className={`${searchInputOpen ? 'w-20 sm:w-24 md:w-28 lg:w-32' : 'w-0'} transition-all duration-700 ease-in-out border-b-2 focus:outline-none`} />
               <button type="submit" 
                 onClick={() => setSearchInputOpen(!searchInputOpen)} 
                 className="">

@@ -1,1 +1,4 @@
-{ "welcome": "Bienvenue, {{name}}!" }
+{ 
+  "welcome": "Bienvenue, {{name}}!", 
+  "Handmade natural scented candles.": "Les bougies naturelles, bien senté."
+}
