@@ -40,7 +40,7 @@ export default function Index() {
     <Layout>
       {/** <h1>{translate('welcome', { name: 'User' })}</h1> */}
       <section className="hero h-[100dvh] flex flex-col justify-center gap-y-12 md:gap-y-36 relative">
-        <h2 className="lowercase text-3xl md:text-7xl lg:text-8xl xl:text-9xl font-bold px-3 md:px-6 lg:px-8 z-10">{translate('Handmade natural scented candles.')}</h2>
+        <h2 className="lowercase text-6xl md:text-8xl xl:text-9xl font-bold px-3 md:px-6 lg:px-8 z-10">{translate('Handmade natural scented candles.')}</h2>
         <section className="featured-candles">
           {heroTexts.map((item, i) => (
             <article className="h-full">
@@ -69,12 +69,28 @@ export default function Index() {
           ))}
         </section>
         <div className="z-20 absolute right-3 md:right-6 lg:right-8  bottom-12 md:bottom-16">
-          <a href="#" className="lowercase border rounded-full px-3 md:px-4.5 py-1 md:py-1.5">Shop now</a>
+          <a href="#" className="lowercase font-bold border border-2 rounded-full px-3 md:px-4.5 py-1 md:py-1.5">Shop now</a>
         </div>
       </section>
       
-      <section className="pt-9 px-3 md:px-6 lg:px-8">
-        <p>Other parts of the page will be here</p>
+      <section className="pt-20 px-3 md:px-6 lg:px-8 h-[100dvh]">
+        <h2 className="lowercase font-bold text-4xl md:text-5xl xl:text-6xl h-[17.5%]">Shop</h2>
+        <section className="h-[82.5%] pb-2">
+          <ul className="h-full flex flex-col justify-between gap-y-4">
+            <li className="flex-1 flex justify-between items-center border-t">
+              <a href="#" className="lowercase text-2xl">Holiday Collection</a>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 7L15 12L10 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
+            </li>
+            <li className="flex-1 flex justify-between items-center border-t">
+              <a href="#" className="lowercase text-2xl">Summer Collection</a>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 7L15 12L10 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
+            </li>
+            <li className="flex-1 flex justify-between items-center border-t">
+              <a href="#" className="lowercase text-2xl">Winter Collection</a>
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6"><g id="SVGRepo_bgCarrier" strokeWidth="0"></g><g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M10 7L15 12L10 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path> </g></svg>
+            </li>
+          </ul>
+        </section>
       </section>
     </Layout>
   )
