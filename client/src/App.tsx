@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { route } from './routes';
-import AboutUs from './views/public/AboutUs';
-import Collection from './views/public/Collection';
-import ContactUs from './views/public/ContactUs';
-import Product from './views/public/Product';
-import Shop from './views/public/Shop';
-import Index from './views/public/Index';
+import { route } from '@/routes';
+import AboutUs from '@/views/public/AboutUs';
+import Collection from '@/views/public/Collection';
+import ContactUs from '@/views/public/ContactUs';
+import Product from '@/views/public/Product';
+import Shop from '@/views/public/Shop';
+import Index from '@/views/public/Index';
 
 function App() {
 
