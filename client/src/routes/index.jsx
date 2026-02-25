@@ -6,6 +6,12 @@ const routeNames = {
   
   
   /** Public routes */
+  'about-us': '/about-us',
+  'collection-list': '/collection/list',
+  'collection': '/collection',
+  'contact-us': '/contact-us',
+  'product': '/product',
+  'shop': '/shop',
   'index': '/',
 }
 

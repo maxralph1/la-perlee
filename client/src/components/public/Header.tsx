@@ -1,9 +1,12 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { route } from '@/routes';
 import { useTranslation } from 'react-i18next';
 
 export default function Header() {
   const { i18n } = useTranslation();
   const [siteLanguage, setSiteLanguage] = useState('fr');
+  const isMobile = window.innerWidth <= 768;
   const [navOpen, setNavOpen] = useState(false);
   const [searchInputOpen, setSearchInputOpen] = useState(false);
   
@@ -14,7 +17,6 @@ export default function Header() {
   
   async function searchProduct(e) {
     e.preventDefault();
-    // console.log("Yes");
     const inputValue = e.target.elements['search-text'].value;
 
     if (inputValue?.length) {
@@ -28,12 +30,28 @@ export default function Header() {
   return (
     <div className="relative flex justify-between pt-5 pb-1 mx-3 md:mx-6 lg:mx-8 border-b-2 border-b-amber-600 dark:border-b-amber-500">
       <section className="flex gap-x-3">
-        <h1 className="font-bold text-amber-600 dark:text-amber-500">La Perlée</h1>
-        <div className={`transition-all duration-700 ease-in-out ${navOpen ? 'max-md:opacity-100 max-md:translate-y-0 pointer-events-auto' : 'max-md:opacity-0 max-md:-translate-y-20 pointer-events-none'} absolute top-16 right-1 md:relative md:top-0 md:right-0`}>
-          <ul className="flex flex-col md:flex-row gap-3 max-md:p-3 max-md:border-2 max-md:rounded-sm text-end md:text-start text-amber-600 dark:text-amber-500">
-            <li className="font-semibold"><a href="#">Shop</a></li>
-            <li className="font-semibold"><a href="#">About Us</a></li>
-            <li className="font-semibold"><a href="#">Contact</a></li>
+        <h1 className="font-bold text-amber-600 dark:text-amber-500">
+          <Link to={ route('index') }>
+            La Perlée
+          </Link>
+        </h1>
+        <div className={`transition-all duration-700 ease-in-out ${(navOpen) ? 'max-md:opacity-100 max-md:translate-y-0 pointer-events-auto' : `max-md:opacity-0 max-md:-translate-y-20 ${isMobile && `pointer-events-none`}`} absolute top-16 right-1 md:relative md:top-0 md:right-0`}>
+          <ul className="flex flex-col md:flex-row gap-3 max-md:p-3 max-md:border-2 max-md:rounded-sm text-end md:text-start text-amber-600 dark:text-amber-500 max-md:bg-gray-100">
+            <li className="font-semibold">
+              <Link to={ route('shop') }>
+                Shop
+              </Link>
+            </li>
+            <li className="font-semibold">
+              <Link to={ route('about-us') }>
+                About Us
+              </Link>
+            </li>
+            <li className="font-semibold">
+              <Link to={ route('contact-us') }>
+                Contact Us
+              </Link>
+            </li>
           </ul>
         </div>
       </section>
