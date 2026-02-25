@@ -1,4 +1,4 @@
-import Layout from '@/components/public/Layout.tsx';
+import Layout from '@/components/public/Layout';
 
 export default function Shop() {
   return (

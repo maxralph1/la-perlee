@@ -1,5 +1,5 @@
-import LinkButton from '@/components/LinkButton.tsx';
-import Layout from '@/components/public/Layout.tsx';
+import LinkButton from '@/components/LinkButton';
+import Layout from '@/components/public/Layout';
 
 export default function Collection() {
   return (
