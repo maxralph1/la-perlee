@@ -84,17 +84,6 @@ export default function Index() {
           ))}
         </section>
         
-        <div className="z-20 absolute right-3 md:right-6 lg:right-8  bottom-12 md:bottom-16">
-          <a href="#shop" className="lowercase font-bold border border-2 rounded-full px-3 md:px-4.5 py-1 md:py-1.5">Shop now</a>
-        </div>
-      </section>
-      
-      <section id="shop" className="pt-20 px-3 md:px-6 lg:px-8 h-[100dvh]">
-        <h2 className="lowercase font-bold text-4xl md:text-5xl xl:text-6xl h-[17.5%]">Shop</h2>
-        <section className="h-[82.5%] pb-2">
-          <ul className="h-full flex flex-col justify-between gap-y-4">
-            <li className="flex-1 flex justify-between items-center border-t">
-        
         <div className="z-20 absolute right-3 md:right-6 lg:right-8 bottom-12 md:bottom-20">
           <LinkButton 
             htmlId="shop" 
