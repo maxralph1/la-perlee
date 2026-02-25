@@ -83,7 +83,7 @@ export default function Index() {
             </article>
           ))}
         </section>
-<<<<<<< HEAD
+        
         <div className="z-20 absolute right-3 md:right-6 lg:right-8  bottom-12 md:bottom-16">
           <a href="#shop" className="lowercase font-bold border border-2 rounded-full px-3 md:px-4.5 py-1 md:py-1.5">Shop now</a>
         </div>
@@ -94,7 +94,6 @@ export default function Index() {
         <section className="h-[82.5%] pb-2">
           <ul className="h-full flex flex-col justify-between gap-y-4">
             <li className="flex-1 flex justify-between items-center border-t">
-=======
         
         <div className="z-20 absolute right-3 md:right-6 lg:right-8 bottom-12 md:bottom-20">
           <LinkButton 
@@ -148,7 +147,6 @@ export default function Index() {
         <section className="flex-1 min-h-0 pb-2 mt-4">
           <ul className="h-[350px] flex flex-col justify-between gap-y-4 overflow-y-auto">
             <li className="flex-1 flex-shrink-0 flex justify-between items-center border-t py-4">
->>>>>>> dev
               <a href="#" className="lowercase text-2xl">Holiday Collection</a>
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0">
                 <path d="M10 7L15 12L10 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
