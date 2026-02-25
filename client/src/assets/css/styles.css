@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@theme {
+  --breakpoint-mobile-horizontal: 896px and (orientation: landscape);
+  /* or using height: */
+  --breakpoint-mobile-horizontal: 430px and (orientation: landscape);
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
