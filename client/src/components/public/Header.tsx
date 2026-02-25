@@ -23,7 +23,8 @@ export default function Header() {
       // console.log("Input found:", inputValue);
       // Process keyword search
       // await ...
-      await e.target.reset();
+      // await e.target.reset();
+      await e.currentTarget.reset();
     }
   }
   
