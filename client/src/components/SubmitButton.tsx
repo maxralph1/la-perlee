@@ -1,7 +1,7 @@
 interface LinkButtonProps {
   htmlAction: string;
   text: string;
-  additionalStyling?: any;
+  additionalStyling?: string;
 }
 
 export default function SubmitButton({htmlAction, text, additionalStyling = ''}: LinkButtonProps) {
