@@ -1,9 +1,14 @@
+import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { route } from '@/routes';
 import Header from '@/components/public/Header.tsx';
 import Footer from '@/components/public/Footer.tsx';
 
-export default function Layout({ children }) {
+interface LayoutProps {
+  children: React.ReactNode;
+}
+
+export default function Layout({ children }: LayoutProps) {
   const location = useLocation();
   
   return (
@@ -18,5 +23,5 @@ export default function Layout({ children }) {
         <Footer />
       </footer>
     </div>
-  )
+  );
 }

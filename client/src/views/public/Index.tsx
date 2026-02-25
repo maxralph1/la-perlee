@@ -8,6 +8,7 @@ import Img1 from '@/assets/images/img1.jpg';
 import Img2 from '@/assets/images/img2.jpg';
 import Img3 from '@/assets/images/img3.jpeg';
 import ProductCard1 from '@/components/public/ProductCard1.tsx';
+import Layout from '@/components/public/Layout.tsx';
 
 export default function Index() {
   const [index, setIndex] = useState(0);
