@@ -21,13 +21,6 @@
     "erasableSyntaxOnly": true,
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true,
-    
-    "baseUrl": ".",
-    "paths": {
-      "@/*": ["./src/*"]
-    },
-    "composite": true,
-    "emitDeclarationOnly": true
   },
   "include": ["./vite.config.ts"]
 }

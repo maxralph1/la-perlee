@@ -2,12 +2,12 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 // import { route } from '@/routes';
 import { useTranslation } from 'react-i18next';
-import LinkButton from '@/components/LinkButton';
-import Img1 from '@/assets/images/img1.jpg';
-import Img2 from '@/assets/images/img2.jpg';
-import Img3 from '@/assets/images/img3.jpeg';
-import ProductCard1 from '@/components/public/ProductCard1';
-import Layout from '@/components/public/Layout';
+import LinkButton from '../../components/LinkButton';
+import Img1 from '../../assets/images/img1.jpg';
+import Img2 from '../../assets/images/img2.jpg';
+import Img3 from '../../assets/images/img3.jpeg';
+import ProductCard1 from '../../components/public/ProductCard1';
+import Layout from '../../components/public/Layout';
 
 export default function Index() {
   const [index, setIndex] = useState(0);

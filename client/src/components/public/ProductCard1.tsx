@@ -1,4 +1,4 @@
-import Img1 from '@/assets/images/img1.jpg';
+import Img1 from '../../assets/images/img1.jpg';
 
 export default function ProductCard1() {
   return (
