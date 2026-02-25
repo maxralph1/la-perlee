@@ -1,9 +1,7 @@
-import React from 'react';
-
 interface LinkButtonProps {
   htmlId: string;
   text: string;
-  additionalStyling?: string;
+  additionalStyling?: any;
 }
 
 export default function LinkButton({ htmlId, text, additionalStyling = '' }: LinkButtonProps) {

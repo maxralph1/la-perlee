@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
-import Layout from '@/components/public/Layout.tsx';
 import { Link } from 'react-router-dom';
-import { route } from '@/routes';
+// import { route } from '@/routes';
 import { useTranslation } from 'react-i18next';
 import LinkButton from '@/components/LinkButton.tsx';
 import Img1 from '@/assets/images/img1.jpg';
@@ -150,7 +149,7 @@ export default function Index() {
             </li>
             <li className="flex-1 
             flex-shrink-0 flex justify-between items-center border-y py-4">
-              <a href="#" className="lowercase text-2xl">Winter Collection</a>
+              <Link to="#" className="lowercase text-2xl">Winter Collection</Link>
               <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 flex-shrink-0">
                 <path d="M10 7L15 12L10 17" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
               </svg>

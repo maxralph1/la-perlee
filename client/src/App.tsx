@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { route } from '@/routes/index.jsx';
+import { route } from '@/routes';
 import AboutUs from '@/views/public/AboutUs.tsx';
 import Collection from '@/views/public/Collection.tsx';
 import ContactUs from '@/views/public/ContactUs.tsx';

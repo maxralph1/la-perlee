@@ -1,9 +1,9 @@
-import { React, useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { route } from '@/routes';
 import { useTranslation } from 'react-i18next';
 
-export default function Header(): JSX.Element {
+export default function Header() {
   const { i18n } = useTranslation();
   const [siteLanguage, setSiteLanguage] = useState('fr');
   const isMobile = window.innerWidth <= 768;
