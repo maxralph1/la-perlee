@@ -1,4 +1,4 @@
-import LinkButton from '@/components/LinkButton';
+import LinkButton from '@/components/public/version-2/LinkButton';
 import Layout from '@/components/public/Layout';
 
 export default function Collection() {
